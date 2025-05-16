@@ -1,8 +1,92 @@
-/* место для вашего кода */
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 0;/*но это не точно*/
+    padding: 0;
+    height: 293px;
+}
+.header-menu-list {
+    display: flex;
+    gap: 13px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.header-menu-item {
+    text-decoration: underline;
+    list-style-type: circle;
+}
+
+.header-menu-item-active {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header-logo-image {
+    height: 105px;
+    width: 108px;
+    margin: 92px 96px;
+}
+
+.header-contacts {
+    height: 98px;
+    width: 240px;
+    margin: 95px 100px;
+    margin-right: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;    
+}
+
+/*секция с заголовком*/
+
+.cover-section {
+    height: 757px;
+    background-image: url("../images/cover.jpg");
 
 }
+
+.cover-title-section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 114.99999999999999%;
+    color: #FFFFFF;   
+    letter-spacing: 0.3em;   
+}
+
+.cover-title {
+    margin-top: 165px;  
+    flex-direction: column;
+    line-height: ;
+}
+
+.cover-title-left {
+    display: block;
+    text-align: left;
+
+}
+
+.cover-title-center {
+    display: block;
+    text-align: center;
+}
+
+.cover-title-right {
+    display: block;
+    text-align: right;
+}
+
+
