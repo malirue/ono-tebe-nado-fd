@@ -49,17 +49,23 @@
 
 .cover-section {
     height: 757px;
-    background-image: url("../images/cover.jpg");
-
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/cover.jpg"); 
+    background-size: cover;
 }
 
 .cover-title-section {
     display: flex;
     flex-direction: column;
+    margin-top: 165px;
+    margin-left: 50px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 75px;
     text-align: center;
     text-transform: uppercase;
     line-height: 114.99999999999999%;
@@ -70,7 +76,7 @@
 .cover-title {
     margin-top: 165px;  
     flex-direction: column;
-    line-height: ;
+    line-height: 115%;
 }
 
 .cover-title-left {
@@ -89,4 +95,44 @@
     text-align: right;
 }
 
+.cover-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    width: 1000px;
+    margin-left: 50px;
+    margin-top: 106px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
 
+.cover-footer-p {
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 20px;
+}
+.cover-footer-bottom {
+    height: 51px;
+    width: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style:groove;
+    border-color: #FFFFFF;
+}
