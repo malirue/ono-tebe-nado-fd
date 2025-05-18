@@ -136,3 +136,22 @@
     border-style:groove;
     border-color: #FFFFFF;
 }
+
+/*секция с карточками*/
+
+.lots {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 25px;
+
+}
+
+.lots-title {
+    grid-column: span 3;
+}
+
+.lots-footer {
+    grid-column: span 3;
+}
