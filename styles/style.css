@@ -240,7 +240,7 @@
 /*секция с информацией об аукционе*/
 
 .about-section {
-    margin-top: 155px;
+    margin-top: 120px;
     display: flex;
 }
 .about-image-background {
@@ -268,6 +268,7 @@
 
 .about-title {
     margin-top: 133px;
+    margin-bottom: 75px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 40px;
@@ -278,11 +279,64 @@
 }
 
 .about-content {
-    margin-top: 100px;
+    margin-top: 25px;
     font-family: Raleway;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
+}
+
+/*подвал*/
+
+.footer {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 50px;
+    padding: 0;
+    height: 180px; 
+}
+
+.footer-contacts {
+    height: 98px;
+    width: 264.57px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+
+}
+
+.footer-contacts-underline {
+    text-decoration: underline;
+}
+
+.footer-nav {
+    align-items: center;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-nav-underline {
+    text-decoration: underline;
+}
+
+.footer-socialis {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer-socialis-image {
+    height: 48px;
+    width: 48px;
 
 }
