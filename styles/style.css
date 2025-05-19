@@ -142,16 +142,147 @@
 .lots {
     margin-top: 180px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 334px);
+    grid-template-rows: 74px 596px 53px;
     column-gap: 25px;
-
 }
 
 .lots-title {
     grid-column: span 3;
+    margin-left: 40px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+}
+
+.lots-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.lots-card-background-image-1 {
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/card-lot-01.jpg"); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+.lots-card-background-image-2 {
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/card-lot-02.jpg"); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+.lots-card-background-image-3 {
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/card-lot-03.jpg"); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+.lots-card-title {
+    height: 110px;
+    width: 254px;
+    margin: 48px 48px 40px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #FFFFFF;
+}
+
+.lots-card-content {
+    width: 254px;
+    margin: auto;
+    margin-bottom: 48px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
 }
 
 .lots-footer {
-    grid-column: span 3;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    
+}
+
+/*секция с информацией об аукционе*/
+
+.about-section {
+    margin-top: 155px;
+    display: flex;
+}
+.about-image-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    width: 240px;
+    margin-left: 47px;
+    margin-top: 35px;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+
+.about-image {
+    height: 114px;
+    width: 148px;
+}
+.about {
+    margin-left: 72px;
+    width: 693px;
+    height: 449px;
+}
+
+.about-title {
+    margin-top: 133px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+}
+
+.about-content {
+    margin-top: 100px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
 }
