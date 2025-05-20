@@ -9,12 +9,14 @@
 .header-menu-list {
     display: flex;
     gap: 13px;
+    margin-left: 40px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .header-menu-item {
@@ -29,20 +31,27 @@
 
 .header-logo-image {
     height: 105px;
-    width: 108px;
-    margin: 92px 96px;
+    width: 148px;
+    margin: auto;
 }
 
 .header-contacts {
-    height: 98px;
-    width: 240px;
-    margin: 95px 100px;
-    margin-right: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 50px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;    
+    line-height: 24px;
+    text-align: left;
+    list-style-type: none;    
+}
+
+.header-contacts-inner {
+    width: 240px;
+    flex-direction: column;
 }
 
 /*секция с заголовком*/
@@ -60,23 +69,22 @@
 .cover-title-section {
     display: flex;
     flex-direction: column;
-    margin-top: 165px;
     margin-left: 50px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 75px;
+    font-size: 66px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 114.99999999999999%;
-    color: #FFFFFF;   
-    letter-spacing: 0.3em;   
+    color: #FFFFFF; 
+    line-height: 114%;  
+    letter-spacing: 0.5em;   
 }
 
 .cover-title {
     margin-top: 165px;  
     flex-direction: column;
-    line-height: 115%;
+    line-height: 132%;
 }
 
 .cover-title-left {
@@ -140,7 +148,7 @@
 /*секция с карточками*/
 
 .lots {
-    margin-top: 180px;
+    margin: 180px 24px 0;
     display: grid;
     grid-template-columns: repeat(3, 334px);
     grid-template-rows: 74px 596px 53px;
@@ -199,6 +207,8 @@
 
 .lots-card-title {
     height: 110px;
+    margin-top: 48px;
+    margin: auto;
     width: 254px;
     margin: 48px 48px 40px;
     font-family: Raleway;
@@ -241,6 +251,8 @@
 
 .about-section {
     margin-top: 120px;
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex;
 }
 .about-image-background {
@@ -267,8 +279,8 @@
 }
 
 .about-title {
-    margin-top: 133px;
-    margin-bottom: 75px;
+    margin-top: 138px;
+    margin-bottom: 105px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 40px;
@@ -290,10 +302,9 @@
 /*подвал*/
 
 .footer {
-    margin-top: 180px;
+    margin-top: 330px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     margin-left: 50px;
     padding: 0;
     height: 180px; 
@@ -307,7 +318,6 @@
     font-size: 18px;
     line-height: 24.3px;
     letter-spacing: 0%;
-
 }
 
 .footer-contacts-underline {
@@ -315,7 +325,10 @@
 }
 
 .footer-nav {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: start;
     font-family: Raleway;
     font-weight: 400;
     font-size: 18px;
@@ -324,6 +337,7 @@
     text-align: center;
 }
 
+
 .footer-nav-underline {
     text-decoration: underline;
 }
@@ -331,8 +345,8 @@
 .footer-socialis {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 .footer-socialis-image {

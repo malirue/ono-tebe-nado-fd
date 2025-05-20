@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
@@ -26,16 +26,17 @@
         </a>
       </div>
       <div class="header-contacts">
-        <p>+9 999 555 5555</p>
-        <p>info@sobaka.ge</p>
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+        <div class="header-contacts-inner">
+          <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
+          <li> <a href="info@sobaka.ge">info@sobaka.ge</a></li>
+          <li>наб. Принсенграхт 263- 265, Амстердам</li>
+        </div>
       </div>
     </header>
     <main>
       <section class="cover-section">
         <!--оно тебе надо-->
         <div class="cover-title-section">
-          <!--найти способ переделать жту хрень, думаю, что должно быть не через абзацы-->
           <h1 class="cover-title">
             <span class="cover-title-left">оно</span>
             <span class="cover-title-centre">тебе</span>
@@ -51,7 +52,7 @@
           <div class="cover-footer-bottom">сделать ставку</div>
         </div>
       </section>
-      <section class="lots"> <!--сделать заголовок отдельно, посмотреть больше отдельно, а сами каточки гридом-->
+      <section class="lots">
         <h2 class="lots-title">лоты</h2>
         <div class="lots-card lots-card-background-image-1">
           <h3 class="lots-card-title">
@@ -119,14 +120,15 @@
     </main>
     <footer class="footer">
       <div class="footer-contacts">
-       <p class="footer-contacts-underline">+9 999 555 5555</p> 
-       <p class="footer-contacts-underline">@sobaka.ge</p>
+       <p class="footer-contacts-underline"><a href="tel:+99995555555">+9 999 555 5555</a></p> 
+       <p class="footer-contacts-underline"><a href="info@sobaka.ge">info@sobaka.ge</a></p>
        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </div>
       <div class="footer-nav">
-        <p>главная</p>
+        <div><p>главная</p>
         <p class="footer-nav-underline">посмотреть лоты</p>
         <p class="footer-nav-underline">об аукционе</p>
+        </div>
       </div>
       <div class="footer-socialis">
         <img
