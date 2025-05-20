@@ -156,8 +156,9 @@
     margin: 180px 24px 0;
     display: grid;
     grid-template-columns: repeat(3, 334px);
-    grid-template-rows: 74px 596px 53px;
+    grid-template-rows: 74px auto 53px;
     column-gap: 25px;
+
 }
 
 .lots-title {
@@ -169,9 +170,11 @@
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
+    
 }
 
 .lots-card {
+    min-height: 596px;
     display: flex;
     position: relative;
     flex-direction: column;
