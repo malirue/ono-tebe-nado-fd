@@ -55,6 +55,7 @@
 .header-contacts-inner {
     width: 240px;
     flex-direction: column;
+    list-style-type: none;
 }
 
 /*секция с заголовком*/
@@ -161,7 +162,7 @@
     margin: 180px 24px 0;
     display: grid;
     grid-template-columns: repeat(3, 334px);
-    grid-template-rows: 74px 596px 53px;
+    grid-template-rows: 74px auto 53px;
     column-gap: 25px;
 }
 
@@ -181,15 +182,14 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .lots-card-title {
     position: relative;
     height: 110px;
-    margin-top: 48px;
-    margin: auto;
     width: 254px;
-    margin: 48px 48px 40px;
+    margin: 48px 40px 30px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 22px;
