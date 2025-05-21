@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 0;
-    height: 293px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    height: auto;
 }
 .header-menu-list {
     margin-left: 40px;
@@ -61,7 +62,7 @@
 /*секция с заголовком*/
 
 .cover-section {
-    height: 757px;
+    min-height: 757px;
     position: relative;
 }
 
@@ -94,7 +95,7 @@
 .cover-title {
     margin-top: 165px;
     flex-direction: column;
-    line-height: 132%;
+    line-height: 134%;
     z-index: 2;
 }
 
@@ -118,11 +119,11 @@
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    height: 51px;
+    height: auto;
     width: 1000px;
     margin-left: 50px;
     margin-top: 100px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -133,19 +134,20 @@
 }
 
 .cover-footer-p {
-    height: 51px;
     display: flex;
-    justify-content: center;
+    height: auto;
+    justify-content: space-evenly;
     align-items: center;
     word-spacing: 20px;
 }
 .cover-footer-bottom {
-    height: 51px;
+    height: auto;
+    padding: 13px;
     width: 256px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 22px;
     line-height: 100%;
@@ -159,7 +161,7 @@
 /*секция с карточками*/
 
 .lots {
-    margin: 180px 24px 0;
+    margin: 185px 24px 0;
     display: grid;
     grid-template-columns: repeat(3, 334px);
     grid-template-rows: 74px auto 53px;
@@ -187,7 +189,7 @@
 
 .lots-card-title {
     position: relative;
-    height: 110px;
+    height: auto;
     width: 254px;
     margin: 48px 40px 30px;
     font-family: "Raleway", sans-serif;
@@ -285,7 +287,7 @@
     grid-template-columns: repeat(3, 1fr);
     margin-left: 50px;
     padding: 0;
-    height: 180px;
+    height: auto;
 }
 
 .footer-contacts {
@@ -305,8 +307,8 @@
 .footer-nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    align-items: stretch;
+    justify-content: stretch;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 18px;
