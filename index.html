@@ -13,9 +13,11 @@
     <header class="header">
       <nav class="header-menu-list">
         <ul class="header-menu-list-inner">
-          <li class="header-menu-item-active">главная</li>
-          <li class="header-menu-item">посмотреть лоты</li>
-          <li class="header-menu-item">об аукционе</li>
+          <li class="header-menu-item-active">
+            <a class="header-menu-item-active-link" href="#cover">главная</a>
+          </li>
+          <li class="header-menu-item"><a href="#lots">посмотреть лоты</a></li>
+          <li class="header-menu-item"><a href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <div>
@@ -27,21 +29,17 @@
           />
         </a>
       </div>
-      <div class="header-contacts">
+      <address class="header-contacts">
         <ul class="header-contacts-inner">
           <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
           <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
           <li>наб. Принсенграхт 263- 265, Амстердам</li>
         </ul>
-      </div>
+      </address>
     </header>
     <main>
-      <section class="cover-section">
-        <img
-          class="background-image"
-          src="./images/cover.jpg"
-          alt="нарисованные цветы"
-        />
+      <section class="cover-section" id="cover">
+        <div class="overlay"></div>
         <div class="cover-title-section">
           <h1 class="cover-title">
             <span class="cover-title-left">оно</span>
@@ -51,64 +49,57 @@
         </div>
         <div class="cover-footer">
           <p class="cover-footer-p">аукцион вещей, в которые никто не верил</p>
-          <div class="cover-footer-bottom">сделать ставку</div>
+          <button class="cover-footer-bottom">сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots-title">лоты</h2>
-        <div class="lots-card">
-          <img
-            class="background-image"
-            src="./images/card-lot-01.jpg"
-            alt="девушка фотографирует молодого человека на телефон, он удивлен"
-          />
-          <h3 class="lots-card-title">
-            Фильм режиссёра, который бросил киношколу
-          </h3>
-          <p class="lots-card-content">
-            Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
-            если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-          </p>
-        </div>
-        <div class="lots-card">
-          <img
-            class="background-image"
-            src="./images/card-lot-02.jpg"
-            alt="Обложка книги. Джеймс Джонс. Улисс. Иностранка"
-          />
-          <h3 class="lots-card-title">
-            Книга, где описан один скучный день из жизни рекламного агента
-          </h3>
-          <p class="lots-card-content">
-            Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-            переходами на древнеанглийский. В ней одновременно рассказывается о
-            16 июня 1904 года и об истории литературы, начиная с античных
-            времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-            бы вы поставили на «Улисса» Джеймса Джойса?
-          </p>
-        </div>
-        <div class="lots-card">
-          <img
-            class="background-image"
-            src="./images/card-lot-03.jpg"
-            alt="Абстракция"
-          />
-          <h3 class="lots-card-title">
-            Картина, которую повторит даже 5-летний сын маминой подруги
-          </h3>
-          <p class="lots-card-content">
-            Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-            похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-            Сколько бы вы на такое поставили, если бы не знали, что это — одна
-            из революционных работ Кандинского?
-          </p>
-        </div>
+        <a href="#">
+          <div class="lots-card lots-card-background-image-1">
+            <div class="overlay"></div>
+            <h3 class="lots-card-title">
+              Фильм режиссёра, который бросил киношколу
+            </h3>
+            <p class="lots-card-content">
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lots-card lots-card-background-image-2">
+            <div class="overlay"></div>
+            <h3 class="lots-card-title">
+              Книга, где описан один скучный день из жизни рекламного агента
+            </h3>
+            <p class="lots-card-content">
+              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+              переходами на древнеанглийский. В ней одновременно рассказывается
+              о 16 июня 1904 года и об истории литературы, начиная с античных
+              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+              бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lots-card lots-card-background-image-3">
+            <div class="overlay"></div>
+            <h3 class="lots-card-title">
+              Картина, которую повторит даже 5-летний сын маминой подруги
+            </h3>
+            <p class="lots-card-content">
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна
+              из революционных работ Кандинского?
+            </p>
+          </div>
+        </a>
         <div class="lots-footer">
-          <p>посмотреть больше</p>
+          <p><a href="#">посмотреть больше</a></p>
         </div>
       </section>
-      <section class="about-section">
-        <!--об аукционе-->
+      <section class="about-section" id="about">
         <div class="about-image-background">
           <img
             class="about-image"
@@ -140,7 +131,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-contacts">
+      <address class="footer-contacts">
         <p class="footer-contacts-underline">
           <a href="tel:+99995555555">+9 999 555 5555</a>
         </p>
@@ -148,30 +139,38 @@
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </p>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
-      </div>
+      </address>
       <div class="footer-nav">
-        <div>
-          <p>главная</p>
-          <p class="footer-nav-underline">посмотреть лоты</p>
-          <p class="footer-nav-underline">об аукционе</p>
-        </div>
+        <nav>
+          <p><a href="#cover">главная</a></p>
+          <p class="footer-nav-underline">
+            <a href="#lots">посмотреть лоты</a>
+          </p>
+          <p class="footer-nav-underline"><a href="#about">об аукционе</a></p>
+        </nav>
       </div>
       <div class="footer-socialis">
-        <img
-          class="footer-socialis-image"
-          src="./images/yt.svg"
-          alt="ссылка на youtube"
-        />
-        <img
-          class="footer-socialis-image"
-          src="./images/vk.svg"
-          alt="ссылка на ВКонтакте"
-        />
-        <img
-          class="footer-socialis-image"
-          src="./images/pinterest.svg"
-          alt="ссылка на Pinterest"
-        />
+        <a href="#">
+          <img
+            class="footer-socialis-image"
+            src="./images/yt.svg"
+            alt="ссылка на youtube"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="footer-socialis-image"
+            src="./images/vk.svg"
+            alt="ссылка на ВКонтакте"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="footer-socialis-image"
+            src="./images/pinterest.svg"
+            alt="ссылка на Pinterest"
+          />
+        </a>
       </div>
     </footer>
   </body>
