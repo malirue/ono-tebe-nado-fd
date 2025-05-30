@@ -24,16 +24,18 @@
     align-items: center;
 }
 
-.header-menu-item {
-    text-decoration: underline;
-    list-style-type: circle;
-}
-
 .header-menu-item-active {
     list-style-type: none;
 }
 
-.header-menu-item-active-link {
+/* стили menu-... общие для header и footer */
+
+.menu-item {
+    text-decoration: underline;
+    list-style-type: circle;
+}
+
+.menu-item-active-link {
     text-decoration: none;
 }
 
@@ -309,6 +311,7 @@
 
 .footer {
     margin-top: 180px;
+    margin-bottom: 82px;
     display: grid;
     grid-template-columns: 265px 150px auto;
     column-gap: 165px;
